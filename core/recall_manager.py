@@ -1,7 +1,7 @@
 import logging
 from datetime import date, timedelta
 
-from config.constants  import COLONNE
+from config.constants import COLONNE
 from core.utils import normalizza_numero_telefono, costruisci_messaggio_richiamo
 
 class RecallManager:

@@ -18,8 +18,7 @@ load_dotenv()
 
 # Importa le classi principali dal tuo progetto diviso
 from scripts.appointment_manager import AppointmentManager
-from config import PATH_APPUNTAMENTI_DBF, PATH_ANAGRAFICA_DBF, TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_WHATSAPP_NUMBER, Environment, CURRENT_ENV
-from core.recall_manager import TIPO_RICHIAMI  # aggiungi questo import all'inizio del file
+from config.constants import TIPO_RICHIAMI, PATH_APPUNTAMENTI_DBF, PATH_ANAGRAFICA_DBF, TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_WHATSAPP_NUMBER, Environment, CURRENT_ENV
 from core.calendar_sync import GoogleCalendarSync
 
 # --- Configurazione Logging per la GUI ---
@@ -765,7 +764,7 @@ class GuiApp(tk.Tk):
         os.execl(python, python, *sys.argv)
 
     def check_env_vars(self):
-        from config import PATH_APPUNTAMENTI_DBF, PATH_ANAGRAFICA_DBF, TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_WHATSAPP_NUMBER
+        from config.constants import PATH_APPUNTAMENTI_DBF, PATH_ANAGRAFICA_DBF, TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_WHATSAPP_NUMBER
 
         missing_vars = []
         if not PATH_APPUNTAMENTI_DBF:
@@ -1217,6 +1216,9 @@ class GuiApp(tk.Tk):
             self.after(0, self.progress.pack_forget)
             self.after(0, lambda: self.progress_var.set(""))
 
-if __name__ == "__main__":
+def main():
     app = GuiApp()
     app.mainloop()
+
+if __name__ == "__main__":
+    main()

@@ -11,7 +11,7 @@ from googleapiclient.errors import HttpError
 from google.auth.transport.requests import Request
 from google.api_core import retry
 
-from config import GOOGLE, COLONNE
+from config.constants import GOOGLE, COLONNE
 
 class GoogleCalendarSync:
     def __init__(self, db_handler):

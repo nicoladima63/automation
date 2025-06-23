@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime, date, timedelta, time
 import logging
 
-from config import TIPI_APPUNTAMENTO, MEDICI, COLONNE
+from config.constants import TIPI_APPUNTAMENTO, MEDICI, COLONNE
 
 def decodifica_tipo_appuntamento(codice_guardia):
     if pd.isna(codice_guardia):

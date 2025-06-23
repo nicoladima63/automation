@@ -69,6 +69,15 @@ TIPI_APPUNTAMENTO = {
     'F': 'Ferie/Assenza', 'A': 'Attività/Manuten', 'M': 'privato'
 }
 
+TIPO_RICHIAMI = {
+    '1': 'Generico',
+    '2': 'Igiene',
+    '3': 'Rx Impianto',
+    '4': 'Controllo',
+    '5': 'Impianto',
+    '6': 'Ortodonzia'
+}
+
 COLORI_APPUNTAMENTO = {
     'V': '#FFA500', 'I': '#800080', 'C': '#00BFFF', 'E': '#808080',
     'H': '#FF0000', 'P': '#008000', 'O': '#FFC0CB', 'L': '#FF00FF',
@@ -104,3 +113,10 @@ GOOGLE = {
         2: os.getenv('CALENDAR_ID_STUDIO_2', require_env('GOOGLE_CALENDAR_EMAIL'))
     }
 }
+
+PATH_APPUNTAMENTI_DBF = PATHS_DBF['appuntamenti']
+PATH_ANAGRAFICA_DBF = PATHS_DBF['anagrafica']
+
+TWILIO_ACCOUNT_SID = TWILIO['account_sid']
+TWILIO_AUTH_TOKEN = TWILIO['auth_token']
+TWILIO_WHATSAPP_NUMBER = TWILIO['whatsapp_number']
