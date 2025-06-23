@@ -7,6 +7,9 @@ from contextlib import redirect_stdout
 import logging
 import sys, os,json
 from threading import Thread
+# Aggiungi la root del progetto al path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from core.sync_utils import load_sync_map, save_sync_map, map_appointment, filter_appointments_for_sync, compute_appointment_hash
 
 # Assicurati che le variabili d'ambiente siano caricate per config.py
