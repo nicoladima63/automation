@@ -1,0 +1,31 @@
+# Gestione ambienti e configurazioni
+python-dotenv>=1.0.0
+
+# API e HTTP
+requests>=2.31.0
+google-api-python-client>=2.126.0
+google-auth>=2.29.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2
+
+# Calendario / gestione eventi
+python-dateutil>=2.8.2
+schedule>=1.2.1
+
+# File e dati
+pandas>=2.2.2
+dbf==0.99.2
+dbfread>=2.0.7  # Se usi solo lettura DBF
+simpledbf>=0.2.6  # Se converti a CSV (opzionale)
+python-dateutil==2.8.2
+openpyxl==3.1.2
+
+# Twilio per messaggi
+twilio>=9.0.0
+
+# Console CLI e debug (opzionale ma utile)
+rich>=13.7.1
+
+# GUI (opzionale, solo se usi tkinter o GUI classica)
+pyinstaller>=6.6.0  # per generare eseguibili standalone (se lo usi)
+

@@ -1,0 +1,85 @@
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+
+#cartelle personali
+windent/
+
+# Byte-compiled / cache / pyinstaller
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.spec
+*.exe
+*.dll
+*.app
+*.deb
+*.rpm
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.log
+
+# Editor / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Configurazioni locali / ambienti
+.env
+.env.*
+*.env.*
+.envrc
+
+# File temporanei di sviluppo
+*.bak
+*.swp
+*.tmp
+*.old
+*.orig
+
+# File di test e debug generati
+debug_*.json
+synced_events.json
+test_*.txt
+*.db
+*.sqlite
+*.lock
+
+# Output Jupyter (se usi notebook)
+.ipynb_checkpoints/
+*.ipynb
+
+# Report / dati esportati
+*.csv
+*.xls
+*.xlsx
+
+# Cache pip e wheel
+pip-wheel-metadata/
+__pypackages__/
+*.whl
+*.egg
+
+# Token e credenziali
+token.json
+credentials.json
+
+# Pacchetti e moduli scaricati
+*.tar.gz
+*.zip
+
+# Log del progetto
+*.log
+*.out
+
+# PyInstaller
+*.spec
+output/
